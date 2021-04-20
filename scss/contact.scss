@@ -1,0 +1,95 @@
+.contact-page {
+  max-width: 980px;
+  margin: 0 auto;
+  h2 {
+    font-family: Proxima;
+    font-size: 30px;
+    color: black;
+    margin-bottom: 35px;
+    margin-top: 60px;
+  }
+  h2:after {
+    content: ""; /* This is necessary for the pseudo element to work. */
+    display: block; /* This will put the pseudo element on its own line. */
+    width: 13%; /* Change this to whatever width you want. */
+    padding-top: 3px; /* This creates some space between the element and the border. */
+    border-bottom: 4px solid black; /* This creates the border. Replace black with whatever color you want.*/
+  }
+  .contact-content {
+    display: flex;
+    max-width: 980px;
+    margin-bottom: 100px;
+    .left-contact {
+      display: flex;
+      flex-direction: column;
+      width: 400px;
+      margin-right: 50px;
+      .map {
+        background-image: url(../images/map.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-width: 400px;
+        height: 442px;
+        margin-bottom: 34px;
+      }
+      .contact-info {
+        max-width: 400px;
+        font-family: Gil;
+        font-size: 18px;
+        color: black;
+        font-weight: lighter;
+      }
+    }
+    .right-contact {
+      display: flex;
+      flex-direction: column;
+      width: 530px;
+      .textbox {
+        max-width: 530px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f5f5f5;
+        border: none;
+        font-family: Gil;
+        font-size: 16px;
+        color: black;
+        height: 60px;
+        padding: 20px;
+        margin-bottom: 21px;
+      }
+      textarea {
+        max-width: 530px;
+        min-height: 60px;
+        display: flex;
+        justify-content: center;
+        background-color: #f5f5f5;
+        border: none;
+        resize: none;
+        font-family: Gil;
+        font-size: 16px;
+        color: black;
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+      .contact-btn {
+        background-color: $site-blue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-family: Gil;
+        font-size: 16px;
+        height: 60px;
+        max-width: 167px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .contact-page {
+    padding: 0 25px;
+  }
+}

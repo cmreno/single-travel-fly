@@ -1,0 +1,1171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+@font-face {
+  font-family: Gil;
+  src: url(../fonts/GillSans.ttc);
+}
+@font-face {
+  font-family: Proxima;
+  src: url(../fonts/ProximaNovaScOsfExtraCondensed.ttf);
+}
+.hero {
+  min-width: 1280px;
+  height: 500px;
+  margin: 0 auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 20px;
+  color: white;
+}
+.hero nav {
+  border-bottom: white solid 2px;
+}
+.hero .hero-over {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.hero .hero-over .hero-head {
+  font-family: Proxima;
+  font-size: 60px;
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+.hero .hero-over .hero-info {
+  font-family: Gil;
+  font-size: 20px;
+  font-style: italic;
+  width: 33%;
+  padding-bottom: 40px;
+}
+.hero .hero-over .hero-button {
+  font-family: Gil;
+  font-size: 15px;
+  background-color: #79addc;
+  padding: 10px 30px;
+}
+
+.promo-tours {
+  max-width: 1280px;
+  min-height: 304px;
+  margin: -50px auto 0 auto;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 160px;
+  padding-right: 160px;
+}
+.promo-tours .promo {
+  height: 304px;
+  width: 236px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.promo-tours .promo .promo-loc {
+  font-family: Proxima;
+  font-size: 60px;
+}
+.promo-tours .promo .promo-price {
+  font-family: Proxima;
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+.promo-tours .promo .learn-button {
+  font-family: Gil;
+  font-size: 15px;
+  background-color: #79addc;
+  padding: 10px 30px;
+  border-radius: 20px;
+}
+.promo-tours .israel {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(../images/tour/tour-01.jpg);
+}
+.promo-tours .usa {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(../images/tour/tour-02.jpg);
+}
+.promo-tours .aus {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(../images/tour/tour-03.jpg);
+}
+
+@media only screen and (max-width: 1030px) {
+  .promo-tours {
+    width: 236px;
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .promo-tours .promo {
+    margin-bottom: 20px;
+  }
+}
+footer {
+  height: 100px;
+  min-width: 1280px;
+  margin: 0 auto;
+  background-color: #79addc;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+footer div {
+  display: flex;
+  justify-content: space-between;
+}
+footer div .copyright {
+  font-family: Gil;
+  font-size: 12px;
+}
+footer div .socials {
+  display: flex;
+  justify-content: space-around;
+}
+
+.form {
+  min-height: 890px;
+  max-width: 875px;
+  margin: 0 auto;
+  font-family: Gil;
+  font-size: 16px;
+  color: black;
+}
+.form .form-head {
+  color: black;
+  font-family: Proxima;
+  font-size: 60px;
+  padding: 40px 0px;
+}
+.form .demo1 {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.form .demo1 input[id="smaller"] {
+  border: 1px solid #79addc;
+  width: 364px;
+  height: 58px;
+  padding: 20px;
+}
+.form .demo1 input[id="larger"] {
+  border: 1px solid #79addc;
+  width: 473px;
+  height: 58px;
+  padding: 20px;
+}
+.form .demo2 {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.form .demo2 input[id="smaller"] {
+  border: 1px solid #79addc;
+  width: 364px;
+  height: 58px;
+  padding: 20px;
+}
+.form .demo2 input[id="larger"] {
+  border: 1px solid #79addc;
+  width: 473px;
+  height: 58px;
+  padding: 20px;
+}
+.form .check-in {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.form .check-in input {
+  border: 1px solid #79addc;
+  width: 698px;
+  height: 58px;
+  padding: 20px;
+}
+.form .check-out {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.form .check-out input {
+  border: 1px solid #79addc;
+  width: 698px;
+  height: 58px;
+  padding: 20px;
+}
+.form .room {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+}
+.form .room select {
+  border: 1px solid #79addc;
+  height: 58px;
+  width: 103px;
+  padding: 20px;
+}
+.form .message {
+  border: 1px solid #79addc;
+}
+.form .message textarea {
+  width: 100%;
+  height: 192px;
+  padding: 20px;
+  resize: none;
+}
+.form .submit-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Gil;
+  font-size: 15px;
+  background-color: #79addc;
+  padding: 10px 30px;
+  border-radius: 20px;
+  max-width: 875px;
+  height: 60px;
+  margin-top: 30px;
+}
+
+nav {
+  height: 60px;
+  max-width: 980px;
+  margin: 20px auto 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: black solid 2px;
+}
+nav .logo {
+  height: 60px;
+  width: 60px;
+  background-image: url(../images/);
+}
+nav .links {
+  height: 100%;
+  width: 630px;
+  display: flex;
+  justify-content: space-between;
+}
+nav .links div.pipe {
+  height: 50%;
+  width: 2px;
+  background-color: #79addc;
+}
+nav .links div a {
+  text-decoration: none;
+  color: black;
+  font-family: Gil;
+  font-size: 15px;
+}
+
+.about {
+  max-width: 980px;
+  margin: 0 auto;
+}
+.about p {
+  font-family: Gil;
+  font-size: 16px;
+}
+.about .top-section {
+  padding-top: 150px;
+}
+.about .top-section h1 {
+  font-family: Proxima;
+  font-size: 60px;
+}
+.about .bottom-section {
+  padding-top: 150px;
+  padding-bottom: 179px;
+}
+.about .bottom-section h3 {
+  font-family: Proxima;
+  font-size: 40px;
+}
+.about .bottom-section .client {
+  max-width: 676px;
+  min-height: 150px;
+  display: flex;
+  margin-bottom: 38px;
+  padding-top: 37px;
+}
+.about .bottom-section .client .client-image {
+  min-width: 260px;
+  min-height: 150px;
+}
+.about .bottom-section .client .client1 {
+  background-image: url(../images/about-client-01.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.about .bottom-section .client .client2 {
+  background-image: url(../images/about-client-02.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.about .bottom-section .client .client-quote {
+  position: relative;
+  min-height: 50px;
+  width: 100%;
+  padding-left: 25px;
+}
+.about .bottom-section .client .client-quote p:last-of-type {
+  margin-bottom: 55px;
+}
+.about .bottom-section .client .client-quote .client-name {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: #79addc;
+  font-family: Proxima;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1100px) {
+  .about {
+    padding: 30px;
+  }
+}
+.content .tour-head {
+  max-width: 980px;
+  margin: 50px auto 0 auto;
+  height: 200px;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(../images/tour/tours-header.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .tour-head span {
+  font-family: Proxima;
+  text-transform: uppercase;
+  color: white;
+  font-size: 60px;
+}
+.content .locations {
+  max-width: 818px;
+  margin: 48px auto 0 auto;
+  min-height: 304px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.content .locations .tour-promo {
+  width: 236px;
+  height: 304px;
+  margin-bottom: 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content .locations .tour-promo .promo-loc {
+  font-family: Proxima;
+  font-size: 60px;
+  color: white;
+}
+.content .locations .tour-promo .promo-price {
+  font-family: Proxima;
+  font-size: 30px;
+  margin-bottom: 40px;
+  color: white;
+}
+.content .locations .tour-promo .promoBtn {
+  padding: 10px 25px;
+  border-radius: 20px;
+  background-color: #79addc;
+  color: white;
+  font-family: Gil;
+  font-size: 15px;
+}
+.content .locations .tour-promo .promoBtn a {
+  text-decoration: none;
+  color: white;
+  font-family: Gil;
+  font-size: 15px;
+}
+.content .locations .tour-promo.isr-1 {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(../images/tour/tour-01.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.content .locations .tour-promo.usa-1 {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(../images/tour/tour-02.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.content .locations .tour-promo.aust-1 {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(../images/tour/tour-03.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.content .locations .newz-1 {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(../images/tour/tour-04.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.content .locations .fra-1 {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(../images/tour/tour-05.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.content .locations .egy-1 {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(../images/tour/tour-06.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.content .locations .jap-1 {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(../images/tour/tour-07.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.content .locations .can-1 {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(../images/tour/tour-08.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.content .locations .uae-1 {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(../images/tour/tour-09.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media all and (max-width: 1200px) {
+  .content .locations {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.tour-section .tour-main-img {
+  max-width: 980px;
+  margin: 50px auto 0 auto;
+  height: 410px;
+  position: relative;
+}
+.tour-section .tour-main-img .tour-package {
+  color: white;
+  font-family: Proxima;
+  font-size: 80px;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+.tour-section .tour-main-img .starting-from {
+  color: white;
+  font-family: Proxima;
+  font-size: 30px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.tour-section .promo-images {
+  max-width: 980px;
+  margin: 40px auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.tour-section .promo-images .pr-img {
+  min-width: 298px;
+  height: 345px;
+}
+.tour-section .promo-images .isr1 {
+  background-image: url(../images/tour/tour-israel/israel-tour-01.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tour-section .promo-images .isr2 {
+  background-image: url(../images/tour/tour-israel/israel-tour-02.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tour-section .promo-images .isr3 {
+  background-image: url(../images/tour/tour-israel/israel-tour-03.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tour-section .promo-images .usa1 {
+  background-image: url(../images/tour/tour-usa/usa-tour-01.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tour-section .promo-images .usa2 {
+  background-image: url(../images/tour/tour-usa/usa-tour-02.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tour-section .promo-images .usa3 {
+  background-image: url(../images/tour/tour-usa/usa-tour-03.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tour-section .promo-images .aus1 {
+  background-image: url(../images/tour/tour-aus/aus-tour-01.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tour-section .promo-images .aus2 {
+  background-image: url(../images/tour/tour-aus/aus-tour-02.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tour-section .promo-images .aus3 {
+  background-image: url(../images/tour/tour-aus/aus-tour-03.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tour-section .promo-images .nz1 {
+  background-image: url(../images/tour/tour-nz/nz-tour-01.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tour-section .promo-images .nz2 {
+  background-image: url(../images/tour/tour-nz/nz-tour-02.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tour-section .promo-images .nz3 {
+  background-image: url(../images/tour/tour-nz/nz-tour-03.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tour-section .promo-images .fra1 {
+  background-image: url(../images/tour/tour-france/france-tour-01.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tour-section .promo-images .fra2 {
+  background-image: url(../images/tour/tour-france/france-tour-02.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tour-section .promo-images .fra3 {
+  background-image: url(../images/tour/tour-france/france-tour-03.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tour-section .promo-images .egy1 {
+  background-image: url(../images/tour/tour-egypt/egypt-tour-01.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tour-section .promo-images .egy2 {
+  background-image: url(../images/tour/tour-egypt/egypt-tour-02.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tour-section .promo-images .egy3 {
+  background-image: url(../images/tour/tour-egypt/egypt-tour-03.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tour-section .promo-images .jap1 {
+  background-image: url(../images/tour/tour-japan/japan-tour-01.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tour-section .promo-images .jap2 {
+  background-image: url(../images/tour/tour-japan/japan-tour-02.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tour-section .promo-images .jap3 {
+  background-image: url(../images/tour/tour-japan/japan-tour-03.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tour-section .promo-images .can1 {
+  background-image: url(../images/tour/tour-canada/canada-tour-01.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tour-section .promo-images .can2 {
+  background-image: url(../images/tour/tour-canada/canada-tour-02.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tour-section .promo-images .can3 {
+  background-image: url(../images/tour/tour-canada/canada-tour-03.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tour-section .promo-images .uae1 {
+  background-image: url(../images/tour/tour-uae/uae-tour-01.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tour-section .promo-images .uae2 {
+  background-image: url(../images/tour/tour-uae/uae-tour-02.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tour-section .promo-images .uae3 {
+  background-image: url(../images/tour/tour-uae/uae-tour-03.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tour-section .tour-days {
+  max-width: 980px;
+  margin: 30px auto 0 auto;
+  padding-bottom: 80px;
+}
+.tour-section .tour-days h2 {
+  font-family: Proxima;
+  font-size: 60px;
+  color: black;
+  -webkit-text-decoration: underline solid black 3px;
+  text-decoration: underline solid black 3px;
+}
+.tour-section .tour-days p {
+  font-family: Gil;
+  font-size: 16px;
+}
+.tour-section .book-btn {
+  max-width: 980px;
+  margin: 30px auto 0 auto;
+  padding: 10px 30px;
+  border-radius: 20px;
+  background-color: #79addc;
+  color: white;
+  font-family: Gil;
+  font-size: 15px;
+  max-width: 135px;
+  margin-bottom: 100px;
+}
+.tour-section .main-isr {
+  height: 410px;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(../images/tour/tour-01.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tour-section .main-usa {
+  height: 410px;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(../images/tour/tour-02.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tour-section .main-aus {
+  height: 410px;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(../images/tour/tour-03.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tour-section .main-newz {
+  height: 410px;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(../images/tour/tour-04.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tour-section .main-fra {
+  height: 410px;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(../images/tour/tour-05.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tour-section .main-egy {
+  height: 410px;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(../images/tour/tour-06.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tour-section .main-jap {
+  height: 410px;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(../images/tour/tour-07.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tour-section .main-can {
+  height: 410px;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(../images/tour/tour-08.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tour-section .main-uae {
+  height: 410px;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(../images/tour/tour-09.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media all and (max-width: 1200px) {
+  .tour-section .promo-images {
+    flex-direction: column;
+    align-items: center;
+  }
+  .tour-section .promo-images .pr-img {
+    margin-top: 20px;
+  }
+}
+.spo {
+  max-width: 980px;
+  margin: 0 auto;
+}
+.spo h2 {
+  font-family: Proxima;
+  font-size: 30px;
+  color: black;
+  margin-bottom: 35px;
+  margin-top: 60px;
+}
+.spo h2:after {
+  content: "";
+  /* This is necessary for the pseudo element to work. */
+  display: block;
+  /* This will put the pseudo element on its own line. */
+  width: 15%;
+  /* Change this to whatever width you want. */
+  padding-top: 3px;
+  /* This creates some space between the element and the border. */
+  border-bottom: 4px solid black;
+  /* This creates the border. Replace black with whatever color you want.*/
+}
+.spo .sp-offers {
+  height: 290px;
+  display: flex;
+  position: relative;
+  margin-bottom: 60px;
+}
+.spo .sp-offers .spo-img {
+  width: 200px;
+  margin-right: 20px;
+}
+.spo .sp-offers .img-spain {
+  background-image: url(../images/special-offer-01.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.spo .sp-offers .img-thai {
+  background-image: url(../images/special-offer-02.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.spo .sp-offers .spo-right {
+  max-width: 290px;
+  display: flex;
+  flex-direction: column;
+}
+.spo .sp-offers .spo-right .spo-loc {
+  font-family: Proxima;
+  font-size: 30px;
+  color: black;
+}
+.spo .sp-offers .spo-right .spo-loc .spo-discount {
+  font-family: Proxima;
+  font-size: 20px;
+  color: #ff7d38;
+  padding-left: 5px;
+}
+.spo .sp-offers .spo-right .spo-loc:after {
+  content: "";
+  /* This is necessary for the pseudo element to work. */
+  display: block;
+  /* This will put the pseudo element on its own line. */
+  width: 55%;
+  /* Change this to whatever width you want. */
+  padding-top: 3px;
+  /* This creates some space between the element and the border. */
+  border-bottom: 4px solid black;
+  /* This creates the border. Replace black with whatever color you want.*/
+}
+.spo .sp-offers .spo-right .spo-desc {
+  font-family: Gil;
+  font-size: 16px;
+  color: black;
+  padding-top: 22px;
+}
+.spo .sp-offers .spo-right .spo-btn {
+  font-family: Gil;
+  font-size: 15px;
+  color: white;
+  width: 135px;
+  height: 40px;
+  background-color: #79addc;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 52px;
+}
+
+@media all and (max-width: 1200px) {
+  .spo {
+    padding: 20px;
+  }
+}
+.blogs {
+  max-width: 980px;
+  margin: 0 auto;
+}
+.blogs h2 {
+  font-family: Proxima;
+  font-size: 30px;
+  color: black;
+  margin-bottom: 35px;
+  margin-top: 60px;
+}
+.blogs h2:after {
+  content: "";
+  /* This is necessary for the pseudo element to work. */
+  display: block;
+  /* This will put the pseudo element on its own line. */
+  width: 10%;
+  /* Change this to whatever width you want. */
+  padding-top: 3px;
+  /* This creates some space between the element and the border. */
+  border-bottom: 4px solid black;
+  /* This creates the border. Replace black with whatever color you want.*/
+}
+.blogs .blog-content {
+  display: flex;
+  max-width: 980px;
+  max-height: 300px;
+  margin-bottom: 150px;
+}
+.blogs .blog-content .date {
+  width: 60px;
+  height: 300px;
+  margin-right: 20px;
+}
+.blogs .blog-content .date .date-img {
+  height: 60px;
+  width: 60px;
+}
+.blogs .blog-content .date .jun-img {
+  background-image: url(../images/jun6.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.blogs .blog-content .date .jul-img {
+  background-image: url(../images/jul23.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.blogs .blog-content .blog-r {
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+}
+.blogs .blog-content .blog-r .blog-img {
+  background-image: url(../images/blog.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 900px;
+  height: 260px;
+}
+.blogs .blog-content .blog-r .title {
+  font-family: Gil;
+  font-size: 15px;
+  color: black;
+  margin-top: 20px;
+}
+.blogs .blog-content .blog-r .blog-writing {
+  max-width: 380px;
+  min-height: 64px;
+  font-family: Gil;
+  font-size: 13px;
+  color: #79addc;
+  margin-top: 11px;
+}
+
+@media all and (max-width: 1200px) {
+  .blogs .blog-content {
+    padding: 0 20px;
+  }
+}
+.contact-page {
+  max-width: 980px;
+  margin: 0 auto;
+}
+.contact-page h2 {
+  font-family: Proxima;
+  font-size: 30px;
+  color: black;
+  margin-bottom: 35px;
+  margin-top: 60px;
+}
+.contact-page h2:after {
+  content: "";
+  /* This is necessary for the pseudo element to work. */
+  display: block;
+  /* This will put the pseudo element on its own line. */
+  width: 13%;
+  /* Change this to whatever width you want. */
+  padding-top: 3px;
+  /* This creates some space between the element and the border. */
+  border-bottom: 4px solid black;
+  /* This creates the border. Replace black with whatever color you want.*/
+}
+.contact-page .contact-content {
+  display: flex;
+  max-width: 980px;
+  margin-bottom: 100px;
+}
+.contact-page .contact-content .left-contact {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin-right: 50px;
+}
+.contact-page .contact-content .left-contact .map {
+  background-image: url(../images/map.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 400px;
+  height: 442px;
+  margin-bottom: 34px;
+}
+.contact-page .contact-content .left-contact .contact-info {
+  max-width: 400px;
+  font-family: Gil;
+  font-size: 18px;
+  color: black;
+  font-weight: lighter;
+}
+.contact-page .contact-content .right-contact {
+  display: flex;
+  flex-direction: column;
+  width: 530px;
+}
+.contact-page .contact-content .right-contact .textbox {
+  max-width: 530px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+  border: none;
+  font-family: Gil;
+  font-size: 16px;
+  color: black;
+  height: 60px;
+  padding: 20px;
+  margin-bottom: 21px;
+}
+.contact-page .contact-content .right-contact textarea {
+  max-width: 530px;
+  min-height: 60px;
+  display: flex;
+  justify-content: center;
+  background-color: #f5f5f5;
+  border: none;
+  resize: none;
+  font-family: Gil;
+  font-size: 16px;
+  color: black;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.contact-page .contact-content .right-contact .contact-btn {
+  background-color: #79addc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: Gil;
+  font-size: 16px;
+  height: 60px;
+  max-width: 167px;
+}
+
+@media all and (max-width: 1200px) {
+  .contact-page {
+    padding: 0 25px;
+  }
+}

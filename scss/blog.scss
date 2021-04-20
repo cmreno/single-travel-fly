@@ -1,0 +1,80 @@
+.blogs {
+  max-width: 980px;
+  margin: 0 auto;
+  h2 {
+    font-family: Proxima;
+    font-size: 30px;
+    color: black;
+    margin-bottom: 35px;
+    margin-top: 60px;
+  }
+  h2:after {
+    content: ""; /* This is necessary for the pseudo element to work. */
+    display: block; /* This will put the pseudo element on its own line. */
+    width: 10%; /* Change this to whatever width you want. */
+    padding-top: 3px; /* This creates some space between the element and the border. */
+    border-bottom: 4px solid black; /* This creates the border. Replace black with whatever color you want.*/
+  }
+  .blog-content {
+    display: flex;
+    max-width: 980px;
+    max-height: 300px;
+    margin-bottom: 150px;
+    .date {
+      width: 60px;
+      height: 300px;
+      margin-right: 20px;
+      .date-img {
+        height: 60px;
+        width: 60px;
+      }
+      .jun-img {
+        background-image: url(../images/jun6.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .jul-img {
+        background-image: url(../images/jul23.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+    .blog-r {
+      display: flex;
+      flex-direction: column;
+      width: 900px;
+      .blog-img {
+        background-image: url(../images/blog.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-width: 900px;
+        height: 260px;
+      }
+      .title {
+        font-family: Gil;
+        font-size: 15px;
+        color: black;
+        margin-top: 20px;
+      }
+      .blog-writing {
+        max-width: 380px;
+        min-height: 64px;
+        font-family: Gil;
+        font-size: 13px;
+        color: $site-blue;
+        margin-top: 11px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .blogs {
+    .blog-content {
+      padding: 0 20px;
+    }
+  }
+}

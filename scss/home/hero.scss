@@ -1,0 +1,44 @@
+.hero {
+  max-width: 1280px;
+  height: 500px;
+  margin: 0 auto;
+  background-image: linear-gradient(to right, $overlay, $overlay),
+    url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 20px;
+  color: white;
+
+  nav {
+    border-bottom: white solid 2px;
+  }
+
+  .hero-over {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+    .hero-head {
+      font-family: Proxima;
+      font-size: 60px;
+      padding-top: 50px;
+      padding-bottom: 40px;
+    }
+    .hero-info {
+      font-family: Gil;
+      font-size: 20px;
+      font-style: italic;
+      width: 33%;
+      padding-bottom: 40px;
+    }
+    .hero-button {
+      font-family: Gil;
+      font-size: 15px;
+      background-color: $site-blue;
+      padding: 10px 30px;
+    }
+  }
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Fly</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <span id="app">
+    <section class="hero">
+      <nav>
+        <div><img src="images/logo/logo-white.png" alt="White Logo" /></div>
+
+        <div class="links">
+          <div><a id="home" href="#">home</a></div>
+          <div class="pipe"></div>
+          <div><a id="about" href="#">about</a></div>
+          <div class="pipe"></div>
+          <div><a id="tours" href="#">tours</a></div>
+          <div class="pipe"></div>
+          <div><a id="specialoffers" href="#">special offers</a></div>
+          <div class="pipe"></div>
+          <div><a id="blog" href="#">blog</a></div>
+          <div class="pipe"></div>
+          <div><a id="contact" href="#">contact</a></div>
+        </div>
+      </nav>
+      <section class="hero-over">
+        <div class="hero-head">travel-fly</div>
+        <div class="hero-info">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat
+          aliquid minus nemo sed est.
+        </div>
+        <div class="hero-button">LEARN MORE</div>
+      </section>
+    </section>
+    <section class="promo-tours">
+      <div class="promo israel">
+        <div class="promo-loc">ISRAEL</div>
+        <div class="promo-price">FROM $1,000</div>
+        <div class="learn-button">LEARN MORE</div>
+      </div>
+
+      <div class="promo usa">
+        <div class="promo-loc">U.S.A.</div>
+        <div class="promo-price">FROM $1,500</div>
+        <div class="learn-button">LEARN MORE</div>
+      </div>
+      <div class="promo aus">
+        <div class="promo-loc">AUSTRALIA</div>
+        <div class="promo-price">FROM $1,800</div>
+        <div class="learn-button">LEARN MORE</div>
+      </div>
+    </section>
+    <section class="form">
+      <div class="form-head">Booking form</div>
+      <div class="demo1">
+        <input type="text" id="smaller" placeholder="name..."/>
+        <input type="text" id="larger" placeholder="email..."/>
+      </div>
+        <div class="demo2">
+        <input type="text" id="smaller" placeholder="country..."/>
+        <input type="text" id="larger" placeholder="hotel..."/>
+       </div>
+      
+      <div class="check-in">
+        Check-in<input type="date" name="check-in" id="check-in">
+      </div>
+      <div class="check-out">Check-out<input type="date" name="check-out" id="check-out"></div>
+    
+      <div class="room">
+        Adults
+        <select id="Adults" name="Adults">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3+">3+</option>
+        </select>
+        Children
+        <select id="Children" name="Children">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3+">3+</option>
+        </select>
+        Rooms
+        <select id="Rooms" name="Rooms">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4+">4+</option>
+        </select>
+      </div>
+      <div class="message">
+        <textarea rows="5" cols"1" id ="message" placeholder="message..."></textarea>
+      </div>
+      <div class="submit-button">SUBMIT</div>
+    </section>
+    <footer>
+        <div class="logo">
+          <img src="images/logo/logo-white.svg" alt="White Logo" />
+        </div>
+        <div class="copyright">
+          Copyright 2019 travel-fly. All rights reserved
+        </div>
+        <div class="socials">
+          <div><img src="images/logo/facebook-13.png" alt="Facebook" /></div>
+          <div> <img src="images/logo/instagram-13.png" alt="Instagram" /> </div>
+          <div> <img src="images/logo/twitter-13.png" alt="Twitter" /></div>
+        </div>
+    </footer>
+  </span>
+    <script src="lib/jquery-3.6.0.min.js"></script>
+    <script type="module" src="app/model.js"></script>
+    <script type="module" src="app/app.js"></script>
+  </body>
+</html>

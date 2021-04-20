@@ -1,0 +1,36 @@
+nav {
+  height: 60px;
+  max-width: 980px;
+  margin: 20px auto 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: black solid 2px;
+
+  .logo {
+    height: 60px;
+    width: 60px;
+    background-image: url(../images/);
+  }
+
+  .links {
+    height: 100%;
+    width: 630px;
+    display: flex;
+    justify-content: space-between;
+
+    div {
+      &.pipe {
+        height: 50%;
+        width: 2px;
+        background-color: $site-blue;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+        font-family: Gil;
+        font-size: 15px;
+      }
+    }
+  }
+}
